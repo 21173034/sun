@@ -1,0 +1,96 @@
+body{
+	font: 15px/1.5;
+	font-family: 'Y_Spotlight';
+	padding: 0;
+	margin: 0;
+	background-color: #F9F8F6;
+}
+
+@font-face {
+	font-family: 'Y_Spotlight';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Global*/
+.container{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.header{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Header*/
+header{
+	background: #F9F8F6;
+	color: #F9F8F6;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #F9F8F6 3px solid;
+}
+
+header a{
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+    text-align: center;
+}
+
+header li{
+	float: none;
+	display: inline;
+	padding:0 20px 0 20px;
+}
+
+header #header_box{
+	float: none;
+}
+
+header #header_box h1{
+	margin: 0;
+}
+
+header navi{
+	float: none;
+	margin-top: 10px;
+    text-align: center;
+}
+
+header .highlight, header .current a{
+	color: #000000;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #000000;
+	font-weight: bold;
+}
+
+table{
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	object-fit: cover;
+}
+
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	color: #000000;
+	background-color: #F9F8F6;
+	text-align: center;
+}

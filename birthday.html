@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        font: 15px/1.5;
+        font-family: 'Y_Spotlight';
+	      padding: 0;
+	      margin: 0;
+	      background-color: #F9F8F6;
+      }
+      
+      @font-face {
+      font-family: 'Y_Spotlight';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      }
+      
+      /*Global*/
+      .header{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      ul{
+        margin: 0;
+        padding: 0;
+      }  
+
+      /*Header*/
+      header{
+        background: #F9F8F6;
+        color: #F9F8F6;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #F9F8F6 3px solid;
+      }
+
+      header a{
+        color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+          text-align: center;
+      }
+
+      header li{
+        float: none;
+        display: inline;
+        padding:0 20px 0 20px;
+      }
+
+      header #header_box{
+        float: none;
+      }
+
+      header #header_box h1{
+        margin: 0;
+      }
+
+      header navi{
+        float: none;
+        margin-top: 10px;
+          text-align: center;
+      }
+
+      header .highlight, header .current a{
+        color: #000000;
+        font-weight: bold;
+      }
+
+      header a:hover{
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .swiper {
+        width: 70%;
+        margin-top: 60px;
+        height: 70%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #F9F8F6;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      footer{
+          padding: 20px;
+          margin: auto;
+          color: #000000;
+          background-color: #F9F8F6;
+          text-align: center;
+      }
+    </style>
+  </head>
+</head>
+<body>
+    <header>
+    <div class="header">
+        <div id="header_box">
+        <li class="header_title"><a href="home.html"><h1>HAPPY BIRTHDAY!</h1></a></li>
+        </div>
+        <navi>
+            <ul>
+                <li><a href="happy.html">Happy</a></li>
+                <li><a href="birthday.html">Birthday</a></li>
+            </ul>
+        </navi>
+    </div>
+    </header>
+
+    <section>
+        <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="sn1.jpg"></div>
+                  <div class="swiper-slide"><img src="sn2.jpg"></div>
+                  <div class="swiper-slide"><img src="sn3.jpg"></div>
+                  <div class="swiper-slide"><img src="sn4.jpg"></div>
+                  <div class="swiper-slide"><img src="sn5.jpg"></div>
+                  <div class="swiper-slide"><img src="sn6.jpg"></div>
+                  <div class="swiper-slide"><img src="sn7.jpg"></div>
+                  <div class="swiper-slide"><img src="sn8.jpg"></div>
+                  <div class="swiper-slide"><img src="sn9.jpg"></div>
+                  <div class="swiper-slide"><img src="sn10.jpg"></div>
+                  <div class="swiper-slide"><img src="sn11.jpg"></div>
+                  <div class="swiper-slide"><img src="sn12.jpg"></div>
+                  <div class="swiper-slide"><img src="sn13.jpg"></div>
+                  <div class="swiper-slide"><img src="sn14.jpg"></div>
+                  <div class="swiper-slide"><img src="sn15.jpg"></div>
+                  <div class="swiper-slide"><img src="sn16.jpg"></div>
+                  <div class="swiper-slide"><img src="sn17.jpg"></div>
+                  <div class="swiper-slide"><img src="sn18.jpg"></div>
+                  <div class="swiper-slide"><img src="sn19.jpg"></div>
+                  <div class="swiper-slide"><img src="sn20.jpg"></div>
+                  <div class="swiper-slide"><img src="sn21.jpg"></div>
+                  <div class="swiper-slide"><img src="sn22.jpg"></div>
+                  <div class="swiper-slide"><img src="sn23.jpg"></div>
+                </div>
+              </div>
+        </div>
+        </section>
+    <footer>
+            <p>기쁘다 우리 선재 생일이시네</p>
+            <audio id="audio">
+              <source src="birthdaysong.mp3" type="audio/mp3"/>
+          </audio>
+          <button onclick="music()"><img src="cat.png" width="50%" height="50%"></button>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+
+      function music() {
+            const audio = 
+        document.querySelector('#audio');
+            audio.loop = true
+            audio.play()
+        }
+    </script>
+
+</body>
+</html>
